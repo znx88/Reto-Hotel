@@ -1,4 +1,4 @@
-# 🏨 HotelApp – Sistema de reservas (Parte 1)
+# HotelApp – Sistema de reservas (Parte 1)
 
 Aplicación de escritorio desarrollada con **JavaFX** que lee los datos de un hotel desde un archivo **XML** y permite consultar la disponibilidad de sus habitaciones.
 
@@ -7,12 +7,12 @@ Aplicación de escritorio desarrollada con **JavaFX** que lee los datos de un ho
 - Carga de los datos del hotel (nombre, ciudad) desde `reservas.xml`.
 - Listado de todas las habitaciones con su tipo, capacidad, precio por noche y estado.
 - Búsqueda de una habitación por número, con respuesta visual por colores:
-  - 🟢 **Verde**: habitación disponible.
-  - 🔴 **Rojo**: habitación ocupada.
-  - 🟣 **Morado**: la habitación no existe.
-  - 🟠 **Naranja**: no se ha escrito ningún número.
+  -  **Verde**: habitación disponible.
+  -  **Rojo**: habitación ocupada.
+  -  **Morado**: la habitación no existe.
+  -  **Naranja**: no se ha escrito ningún número.
 
-## 🛠️ Tecnologías
+##  Tecnologías
 
 | Tecnología | Versión |
 |---|---|
@@ -23,7 +23,7 @@ Aplicación de escritorio desarrollada con **JavaFX** que lee los datos de un ho
 
 El XML se procesa con el parser DOM estándar de Java (`javax.xml.parsers`).
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 HotelApp_Parte1/
@@ -37,11 +37,11 @@ HotelApp_Parte1/
         └── reservas.xml            # Datos del hotel (Hotel Sol, Madrid)
 ```
 
-## 📄 Datos (`reservas.xml`)
+##  Datos (`reservas.xml`)
 
 Contiene el **Hotel Sol** (Madrid, 4 estrellas) con **30 habitaciones** repartidas en 3 plantas (Individual, Doble, Familiar y Suite). Cada habitación incluye: número, estado, planta, tipo, capacidad, precio por noche, vista y accesibilidad.
 
-## 🚀 Cómo ejecutarlo
+##  Cómo ejecutarlo
 
 ### Requisitos
 - JDK 21 o superior
@@ -62,18 +62,11 @@ Si ejecutas sin Maven, necesitas el [SDK de JavaFX](https://openjfx.io/) y añad
 --module-path "<ruta-al-sdk>/lib" --add-modules javafx.controls,javafx.fxml
 ```
 
-## 🔍 Uso
+##  Uso
 
 1. Al abrir la aplicación se muestra la lista de habitaciones.
 2. Escribe un número de habitación (por ejemplo `205`) en el campo de texto.
 3. Pulsa **BUSCAR** para ver si está disponible u ocupada.
 
-## 🗺️ Próximos pasos (Parte 2)
 
-- Crear y modificar reservas desde la interfaz.
-- Guardar los cambios en el XML.
-- Filtros por tipo, planta y precio.
 
-## 👤 Autor
-
-[@znx88](https://github.com/znx88)
