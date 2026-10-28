@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0" spacing="12.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelController">
+
+   <children>
+      <Label text="HOTEL SOL - RESERVAS">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="lblInfo" text="Cargando datos..." wrapText="true" />
+
+      <ListView fx:id="listaHabitaciones" prefHeight="300.0" prefWidth="560.0" />
+
+      <Label text="Buscar habitación por número:" />
+
+      <TextField fx:id="txtNumero" prefHeight="25.0" prefWidth="100.0" promptText="Ej: 205" />
+
+      <Button fx:id="btnBuscar" mnemonicParsing="false" onAction="#buscar" text="BUSCAR" />
+
+      <Label fx:id="lblResultado" text="Introduce un número y pulsa Buscar." wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
